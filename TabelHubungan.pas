@@ -33,6 +33,7 @@ type
     frxrprt1: TfrxReport;
     zqry2: TZQuery;
     zqry3: TZQuery;
+    Button1: TButton;
     procedure kolombersih;
     procedure kolomaktif;
     procedure posisiawal;
@@ -44,6 +45,7 @@ type
     procedure b5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,6 +57,8 @@ var
   id : string;
 
 implementation
+
+uses MainMenu;
 
 {$R *.dfm}
 
@@ -214,6 +218,11 @@ begin
   Edit1.Text:= zqry1.FieldList[3].AsString;
   Edit2.Text:= zqry1.FieldList[4].AsString;
   Edit3.Text:= zqry1.FieldList[5].AsString;
+end;
+
+procedure TFormHubungan.Button1Click(Sender: TObject);
+begin
+FormMenu.showmodal;
 end;
 
 end.

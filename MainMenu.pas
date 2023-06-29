@@ -8,9 +8,6 @@ uses
 
 type
   TFormMenu = class(TForm)
-    mm1: TMainMenu;
-    A1: TMenuItem;
-    Hub1: TMenuItem;
     procedure Hub1Click(Sender: TObject);
   private
     { Private declarations }

@@ -1,8 +1,8 @@
 object FormHubungan: TFormHubungan
-  Left = 324
-  Top = 153
-  Width = 829
-  Height = 571
+  Left = 318
+  Top = 179
+  Width = 821
+  Height = 587
   Caption = 'Tabel Hubungan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -17,7 +17,7 @@ object FormHubungan: TFormHubungan
   TextHeight = 13
   object l1: TLabel
     Left = 64
-    Top = 128
+    Top = 120
     Width = 75
     Height = 16
     Caption = 'STATUS HUB'
@@ -30,7 +30,7 @@ object FormHubungan: TFormHubungan
   end
   object l2: TLabel
     Left = 64
-    Top = 176
+    Top = 168
     Width = 77
     Height = 16
     Caption = 'KETERANGAN'
@@ -43,7 +43,7 @@ object FormHubungan: TFormHubungan
   end
   object l3: TLabel
     Left = 64
-    Top = 48
+    Top = 40
     Width = 56
     Height = 16
     Caption = 'ID SISWA'
@@ -56,7 +56,7 @@ object FormHubungan: TFormHubungan
   end
   object l4: TLabel
     Left = 64
-    Top = 88
+    Top = 80
     Width = 49
     Height = 16
     Caption = 'ID ORTU'
@@ -69,7 +69,7 @@ object FormHubungan: TFormHubungan
   end
   object l5: TLabel
     Left = 64
-    Top = 216
+    Top = 208
     Width = 85
     Height = 16
     Caption = 'STATUS ORTU'
@@ -82,14 +82,14 @@ object FormHubungan: TFormHubungan
   end
   object Edit1: TEdit
     Left = 200
-    Top = 128
+    Top = 120
     Width = 161
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 200
-    Top = 176
+    Top = 168
     Width = 161
     Height = 21
     TabOrder = 1
@@ -141,7 +141,7 @@ object FormHubungan: TFormHubungan
   end
   object dbgrd1: TDBGrid
     Left = 56
-    Top = 272
+    Top = 264
     Width = 689
     Height = 213
     DataSource = ds1
@@ -163,7 +163,7 @@ object FormHubungan: TFormHubungan
   end
   object cbb1: TComboBox
     Left = 200
-    Top = 48
+    Top = 40
     Width = 161
     Height = 21
     ItemHeight = 13
@@ -173,7 +173,7 @@ object FormHubungan: TFormHubungan
   end
   object cbb2: TComboBox
     Left = 200
-    Top = 88
+    Top = 80
     Width = 161
     Height = 21
     ItemHeight = 13
@@ -183,10 +183,19 @@ object FormHubungan: TFormHubungan
   end
   object Edit3: TEdit
     Left = 200
-    Top = 216
+    Top = 208
     Width = 161
     Height = 21
     TabOrder = 11
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 488
+    Width = 689
+    Height = 33
+    Caption = 'KEMBALI KE MENU'
+    TabOrder = 12
+    OnClick = Button1Click
   end
   object ds1: TDataSource
     DataSet = zqry1
@@ -226,6 +235,8 @@ object FormHubungan: TFormHubungan
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
+    DataSet = frxdbdtst1
+    DataSetName = 'frxDBDataset1'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
