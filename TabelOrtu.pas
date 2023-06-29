@@ -1,4 +1,4 @@
-unit TabelKelas;
+unit TabelOrtu;
 
 interface
 

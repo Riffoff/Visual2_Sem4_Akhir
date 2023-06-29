@@ -1,4 +1,4 @@
-unit TabelHubungan;
+unit TabelKelas;
 
 interface
 

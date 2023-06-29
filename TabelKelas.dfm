@@ -1,6 +1,6 @@
 object FormKelas: TFormKelas
-  Left = 192
-  Top = 152
+  Left = 239
+  Top = 206
   Width = 1044
   Height = 540
   Caption = 'Tabel Kelas'
