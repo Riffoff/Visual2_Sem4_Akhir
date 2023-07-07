@@ -46,6 +46,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure Button1Click(Sender: TObject);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,7 +59,7 @@ var
 
 implementation
 
-uses MainMenu;
+uses MainMenu, MenuAdmin;
 
 {$R *.dfm}
 
@@ -222,7 +223,13 @@ end;
 
 procedure TFormHubungan.Button1Click(Sender: TObject);
 begin
-FormMenu.showmodal;
+  close;
+FormAdmin.show;
+end;
+
+procedure TFormHubungan.b6Click(Sender: TObject);
+begin
+frxrprt1.ShowReport();
 end;
 
 end.

@@ -10,12 +10,16 @@ uses
   TabelSemester in 'TabelSemester.pas' {FormSemester},
   TabelSiswa in 'TabelSiswa.pas' {FormSiswa},
   TabelUser in 'TabelUser.pas' {FormUser},
-  TabelWaliKelas in 'TabelWaliKelas.pas' {FormWaliKelas};
+  TabelWaliKelas in 'TabelWaliKelas.pas' {FormWaliKelas},
+  MenuAdmin in 'MenuAdmin.pas' {FormAdmin},
+  Login in 'Login.pas' {FormLogin};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TFormLogin, FormLogin);
+  Application.CreateForm(TFormAdmin, FormAdmin);
   Application.CreateForm(TFormMenu, FormMenu);
   Application.CreateForm(TFormHubungan, FormHubungan);
   Application.CreateForm(TFormKelas, FormKelas);

@@ -1,8 +1,8 @@
 object FormHubungan: TFormHubungan
-  Left = 318
-  Top = 179
-  Width = 821
-  Height = 587
+  Left = 323
+  Top = 159
+  Width = 798
+  Height = 593
   Caption = 'Tabel Hubungan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -160,6 +160,7 @@ object FormHubungan: TFormHubungan
     Height = 49
     Caption = 'LAPORAN'
     TabOrder = 8
+    OnClick = b6Click
   end
   object cbb1: TComboBox
     Left = 200
@@ -190,7 +191,7 @@ object FormHubungan: TFormHubungan
   end
   object Button1: TButton
     Left = 56
-    Top = 488
+    Top = 496
     Width = 689
     Height = 33
     Caption = 'KEMBALI KE MENU'
@@ -226,7 +227,7 @@ object FormHubungan: TFormHubungan
     Top = 128
   end
   object frxdbdtst1: TfrxDBDataset
-    UserName = 'frxDBDataset1'
+    UserName = 'datasethub'
     CloseDataSource = False
     DataSet = zqry1
     BCDToCurrency = False
@@ -235,18 +236,17 @@ object FormHubungan: TFormHubungan
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
-    DataSet = frxdbdtst1
-    DataSetName = 'frxDBDataset1'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 45101.545964409700000000
-    ReportOptions.LastChange = 45104.736296713000000000
+    ReportOptions.CreateDate = 45114.380339710600000000
+    ReportOptions.LastChange = 45114.382012106480000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
+      ''
       'begin'
       ''
       'end.')
@@ -255,7 +255,7 @@ object FormHubungan: TFormHubungan
     Datasets = <
       item
         DataSet = frxdbdtst1
-        DataSetName = 'frxDBDataset1'
+        DataSetName = 'datasethub'
       end>
     Variables = <>
     Style = <>
@@ -264,20 +264,20 @@ object FormHubungan: TFormHubungan
       Width = 1000.000000000000000000
     end
     object Page1: TfrxReportPage
-      PaperWidth = 210.000000000000000000
-      PaperHeight = 297.000000000000000000
-      PaperSize = 9
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
       LeftMargin = 10.000000000000000000
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
       object ReportTitle1: TfrxReportTitle
-        Height = 49.133890000000000000
+        Height = 60.472480000000000000
         Top = 18.897650000000000000
-        Width = 718.110700000000000000
-        object Memo1: TfrxMemoView
-          Left = 219.212740000000000000
-          Top = 11.338590000000000000
+        Width = 740.409927000000000000
+        object Memo2: TfrxMemoView
+          Left = 215.433210000000000000
+          Top = 15.118120000000000000
           Width = 279.685220000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -291,12 +291,115 @@ object FormHubungan: TFormHubungan
           ParentFont = False
         end
       end
+      object MasterData1: TfrxMasterData
+        Height = 18.897650000000000000
+        Top = 196.535560000000000000
+        Width = 740.409927000000000000
+        DataSet = frxdbdtst1
+        DataSetName = 'datasethub'
+        RowCount = 0
+        object Memo7: TfrxMemoView
+          Left = 75.590600000000000000
+          Width = 30.236240000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id_hub'
+          DataSet = frxdbdtst1
+          DataSetName = 'datasethub'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[datasethub."id_hub"]')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          Left = 105.826840000000000000
+          Width = 136.063080000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id_siswa'
+          DataSet = frxdbdtst1
+          DataSetName = 'datasethub'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[datasethub."id_siswa"]')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          Left = 241.889920000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id_ortu'
+          DataSet = frxdbdtst1
+          DataSetName = 'datasethub'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[datasethub."id_ortu"]')
+          ParentFont = False
+        end
+        object Memo11: TfrxMemoView
+          Left = 359.055350000000000000
+          Width = 143.622140000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'status_hubungan'
+          DataSet = frxdbdtst1
+          DataSetName = 'datasethub'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[datasethub."status_hubungan"]')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          Left = 502.677490000000000000
+          Width = 143.622140000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'keterangan'
+          DataSet = frxdbdtst1
+          DataSetName = 'datasethub'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[datasethub."keterangan"]')
+          ParentFont = False
+        end
+      end
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
-        Top = 90.708720000000000000
-        Width = 718.110700000000000000
-        object Memo2: TfrxMemoView
-          Left = 15.118120000000000000
+        Top = 102.047310000000000000
+        Width = 740.409927000000000000
+        object Memo3: TfrxMemoView
+          Left = 75.590600000000000000
           Top = 15.118120000000000000
           Width = 30.236240000000000000
           Height = 18.897650000000000000
@@ -312,8 +415,8 @@ object FormHubungan: TFormHubungan
             'NO')
           ParentFont = False
         end
-        object Memo3: TfrxMemoView
-          Left = 45.354360000000000000
+        object Memo4: TfrxMemoView
+          Left = 105.826840000000000000
           Top = 15.118120000000000000
           Width = 136.063080000000000000
           Height = 18.897650000000000000
@@ -329,8 +432,8 @@ object FormHubungan: TFormHubungan
             'ID SISWA')
           ParentFont = False
         end
-        object Memo4: TfrxMemoView
-          Left = 181.417440000000000000
+        object Memo5: TfrxMemoView
+          Left = 241.889920000000000000
           Top = 15.118120000000000000
           Width = 117.165430000000000000
           Height = 18.897650000000000000
@@ -346,8 +449,8 @@ object FormHubungan: TFormHubungan
             'ID ORTU')
           ParentFont = False
         end
-        object Memo5: TfrxMemoView
-          Left = 298.582870000000000000
+        object Memo6: TfrxMemoView
+          Left = 359.055350000000000000
           Top = 15.118120000000000000
           Width = 143.622140000000000000
           Height = 18.897650000000000000
@@ -364,7 +467,7 @@ object FormHubungan: TFormHubungan
           ParentFont = False
         end
         object Memo10: TfrxMemoView
-          Left = 442.205010000000000000
+          Left = 502.677490000000000000
           Top = 15.118120000000000000
           Width = 143.622140000000000000
           Height = 18.897650000000000000
@@ -378,109 +481,6 @@ object FormHubungan: TFormHubungan
           HAlign = haCenter
           Memo.UTF8 = (
             'KETERANGAN')
-          ParentFont = False
-        end
-      end
-      object MasterData1: TfrxMasterData
-        Height = 18.897650000000000000
-        Top = 185.196970000000000000
-        Width = 718.110700000000000000
-        DataSet = frxdbdtst1
-        DataSetName = 'frxDBDataset1'
-        RowCount = 0
-        object Memo6: TfrxMemoView
-          Left = 15.118120000000000000
-          Width = 30.236240000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'id_hub'
-          DataSet = frxdbdtst1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset1."id_hub"]')
-          ParentFont = False
-        end
-        object Memo7: TfrxMemoView
-          Left = 45.354360000000000000
-          Width = 136.063080000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'id_siswa'
-          DataSet = frxdbdtst1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset1."id_siswa"]')
-          ParentFont = False
-        end
-        object Memo8: TfrxMemoView
-          Left = 181.417440000000000000
-          Width = 117.165430000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'id_ortu'
-          DataSet = frxdbdtst1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset1."id_ortu"]')
-          ParentFont = False
-        end
-        object Memo9: TfrxMemoView
-          Left = 298.582870000000000000
-          Width = 143.622140000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'status_hubungan'
-          DataSet = frxdbdtst1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset1."status_hubungan"]')
-          ParentFont = False
-        end
-        object Memo11: TfrxMemoView
-          Left = 442.205010000000000000
-          Width = 143.622140000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'keterangan'
-          DataSet = frxdbdtst1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset1."keterangan"]')
           ParentFont = False
         end
       end
